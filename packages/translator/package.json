@@ -1,16 +1,16 @@
 {
   "name": "@joi-tools/translator",
   "description": "Translated messages from Joi validation errors",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "github.com/jesusjimeneztapia/joi-tools"
   },
   "homepage": "github.com/jesusjimeneztapia/joi-tools/tree/main/packages/translator",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
-    "dist"
+    "lib"
   ],
   "keywords": [
     "joi",
@@ -23,7 +23,7 @@
     "url": "https://github.com/jesusjimeneztapia"
   },
   "scripts": {
-    "build": "(IF EXIST .\\dist rd /s /q .\\dist) && tsc && tsc-alias && copy .\\src\\types.d.ts .\\dist",
+    "build": "(IF EXIST .\\lib rd /s /q .\\lib) && tsc && tsc-alias && copy .\\src\\types.d.ts .\\lib",
     "prepare": "npm run test -- run && npm run build",
     "lint": "eslint src --ext .ts",
     "lint:fix": "npm run lint -- --fix",
