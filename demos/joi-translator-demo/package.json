@@ -1,0 +1,21 @@
+{
+  "name": "joi-translator-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "eslint src --ext .js",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "@joi-tools/translator": "^0.1.0",
+    "inquirer": "10.1.8",
+    "joi": "17.13.3"
+  }
+}

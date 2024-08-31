@@ -1,0 +1,19 @@
+{
+  "array.base": "{{#label}} debe ser un arreglo",
+  "array.excludes": "{{#label}} contiene un valor excluido",
+  "array.hasKnown": "{{#label}} no contiene al menos una coincidencia requerida para el tipo {:#patternLabel}",
+  "array.hasUnknown": "{{#label}} no contiene al menos una coincidencia requerida",
+  "array.includes": "{{#label}} no coincide con ninguno de los tipos permitidos",
+  "array.includesRequiredBoth": "{{#label}} no contiene {{#knownMisses}} y otro(s) valor(es) {{#unknownMisses}} obligatorio(s)",
+  "array.includesRequiredKnowns": "{{#label}} no contiene {{#knownMisses}}",
+  "array.includesRequiredUnknowns": "{{#label}} no contiene el/los valor(es) {{#unknownMisses}} obligatorio(s)",
+  "array.length": "{{#label}} debe contener {{#limit}} elementos",
+  "array.max": "{{#label}} debe contener como máximo {{#limit}} elementos",
+  "array.min": "{{#label}} debe contener al menos {{#limit}} elementos",
+  "array.orderedLength": "{{#label}} debe contener como máximo {{#limit}} elementos",
+  "array.sort": "{{#label}} debe ordenarse en orden {#order} por {{#by}}",
+  "array.sort.mismatching": "{{#label}} no se puede ordenar debido a que los tipos no coinciden",
+  "array.sort.unsupported": "{{#label}} no se puede ordenar debido a un tipo no admitido: {#type}",
+  "array.sparse": "{{#label}} no debe ser un elemento indefinido",
+  "array.unique": "{{#label}} contiene un elemento duplicado"
+}

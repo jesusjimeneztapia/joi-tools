@@ -1,0 +1,15 @@
+{
+  "number.base": "{{#label}} debe ser un número",
+  "number.greater": "{{#label}} debe ser mayor que {{#limit}}",
+  "number.infinity": "{{#label}} no puede ser infinito",
+  "number.integer": "{{#label}} debe ser un número entero",
+  "number.less": "{{#label}} debe ser menor que {{#limit}}",
+  "number.max": "{{#label}} debe ser menor o igual a {{#limit}}",
+  "number.min": "{{#label}} debe ser mayor o igual a {{#limit}}",
+  "number.multiple": "{{#label}} debe ser múltiplo de {{#multiple}}",
+  "number.negative": "{{#label}} debe ser un número negativo",
+  "number.port": "{{#label}} debe ser un puerto válido",
+  "number.positive": "{{#label}} debe ser un número positivo",
+  "number.precision": "{{#label}} no debe tener más de {{#limit}} decimales",
+  "number.unsafe": "{{#label}} debe ser un número seguro"
+}

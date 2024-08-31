@@ -1,0 +1,11 @@
+{
+  "date.base": "{{#label}} debe ser una fecha válida",
+  "date.format": "{{#label}} debe estar en el formato: {msg(\"date.format.\" + #format) || #format}",
+  "date.greater": "{{#label}} debe ser mayor que {{:#limit}}",
+  "date.less": "{{#label}} debe ser menor que {{:#limit}}",
+  "date.max": "{{#label}} debe ser menor o igual a {{:#limit}}",
+  "date.min": "{{#label}} debe ser mayor o igual a {{:#limit}}",
+  "date.format.iso": "fecha ISO 8601",
+  "date.format.javascript": "timestamp o número de milisegundos",
+  "date.format.unix": "timestamp o número de segundos"
+}

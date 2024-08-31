@@ -1,0 +1,6 @@
+{
+  "binary.base": "{{#label}} debe ser un búfer o un texto",
+  "binary.length": "{{#label}} debe tener {{#limit}} bytes",
+  "binary.max": "{{#label}} debe tener como máximo {{#limit}} bytes",
+  "binary.min": "{{#label}} debe tener al menos {{#limit}} bytes"
+}

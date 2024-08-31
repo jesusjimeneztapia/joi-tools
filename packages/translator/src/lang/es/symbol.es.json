@@ -1,0 +1,4 @@
+{
+  "symbol.base": "{{#label}} debe ser un símbolo",
+  "symbol.map": "{{#label}} debe ser uno de {{#map}}"
+}

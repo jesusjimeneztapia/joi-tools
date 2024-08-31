@@ -1,0 +1,65 @@
+{
+  "title": "Welcome to Joi Translator Demo!",
+  "prompt": {
+    "message": "Choose Option",
+    "choices": [
+      { "name": "Login", "value": "LOGIN" },
+      { "name": "Sign In", "value": "SIGN_IN" },
+      { "name": "Change Language", "value": "CHANGE_LANGUAGE" },
+      { "name": "Quit", "value": "QUIT" }
+    ],
+    "choicesLogged": [
+      { "name": "Edit Profile", "value": "EDIT_PROFILE" },
+      { "name": "Logout", "value": "LOGOUT" },
+      { "name": "Change Language", "value": "CHANGE_LANGUAGE" },
+      { "name": "Quit", "value": "QUIT" }
+    ]
+  },
+  "commands": {
+    "changeLanguage": {
+      "title": "Change Language",
+      "prompt": {
+        "message": "Choose Language",
+        "back": "Back"
+      }
+    },
+    "login": {
+      "title": "Login",
+      "prompt": {
+        "username": {
+          "message": "Username:"
+        },
+        "password": {
+          "message": "Password:"
+        }
+      }
+    },
+    "signIn": {
+      "title": "Sign In",
+      "prompt": {
+        "fullname": {
+          "message": "Fullname:"
+        },
+        "username": {
+          "message": "Username:"
+        },
+        "phone": {
+          "message": "Phone:"
+        },
+        "birthday": {
+          "message": "Birthday:"
+        },
+        "password": {
+          "message": "Password:"
+        },
+        "repeatPassword": {
+          "message": "Repeat Password:"
+        },
+        "passwordNotMatch": "Passwords do not match"
+      }
+    },
+    "tryAgain": "Try again...\n",
+    "userExists": "User already exists",
+    "invalidCredentials": "Invalid credentials"
+  }
+}

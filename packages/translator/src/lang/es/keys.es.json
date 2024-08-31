@@ -1,0 +1,22 @@
+{
+  "object.and": "{{#label}} contiene {{#presentWithLabels}} sin sus pares requeridos {{#missingWithLabels}}",
+  "object.assert": "{{#label}} no es válido porque {if(#subject.key, `\"` + #subject.key + `\" falló en ` + (#message || \"pasar la prueba de validación\"), #message || \"validación fallida\")}",
+  "object.base": "{{#label}} debe ser de tipo {{#type}}",
+  "object.instance": "{{#label}} debe ser una instancia de {{:#type}}",
+  "object.length": "{{#label}} debe tener {{#limit}} clave{if(#limit == 1, \"\", \"s\")}",
+  "object.max": "{{#label}} debe tener como máximo {{#limit}} clave{if(#limit == 1, \"\", \"s\")}",
+  "object.min": "{{#label}} debe tener al menos {{#limit}} clave{if(#limit == 1, \"\", \"s\")}",
+  "object.missing": "{{#label}} debe contener al menos uno de {{#peersWithLabels}}",
+  "object.nand": "{{:#mainWithLabel}} no debe existir simultáneamente con {{#peersWithLabels}}",
+  "object.oxor": "{{#label}} contiene un conflicto entre pares exclusivos opcionales {{#peersWithLabels}}",
+  "object.pattern.match": "{{#label}} las claves no coincidieron con los requisitos del patrón",
+  "object.refType": "{{#label}} debe ser una referencia de Joi",
+  "object.regex": "{{#label}} debe ser un objeto RegExp",
+  "object.rename.multiple": "{{#label}} no puede renombrar {{:#from}} porque renombrar varias claves está deshabilitado y ya se ha renombrado otra clave a {{:#to}}",
+  "object.rename.override": "{{#label}} no puede renombrar {{:#from}} porque la sobreescritura está deshabilitada y el destino {{:#to}} existe",
+  "object.schema": "{{#label}} debe ser un esquema Joi del tipo {{#type}}",
+  "object.unknown": "{{#label}} no está permitido",
+  "object.with": "{{:#mainWithLabel}} falta el par obligatorio {{:#peerWithLabel}}",
+  "object.without": "{{:#mainWithLabel}} conflicto con par prohibido {{:#peerWithLabel}}",
+  "object.xor": "{{#label}} contiene un conflicto entre pares exclusivos {{#peersWithLabels}}"
+}

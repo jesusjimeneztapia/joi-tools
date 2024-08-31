@@ -1,0 +1,43 @@
+{
+  "name": "@joi-tools/translator",
+  "description": "Translated messages from Joi validation errors",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "github.com/jesusjimeneztapia/joi-tools"
+  },
+  "homepage": "github.com/jesusjimeneztapia/joi-tools/tree/main/packages/translator",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "joi",
+    "translation",
+    "validation"
+  ],
+  "author": {
+    "name": "Jesús Jimenez Tapia",
+    "email": "jesusjimeneztapia456@gmail.com",
+    "url": "https://github.com/jesusjimeneztapia"
+  },
+  "scripts": {
+    "build": "(IF EXIST .\\dist rd /s /q .\\dist) && tsc && tsc-alias && copy .\\src\\types.d.ts .\\dist",
+    "prepare": "npm run test -- run && npm run build",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "vitest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "8.3.0",
+    "@typescript-eslint/parser": "8.3.0",
+    "tsc-alias": "1.8.10",
+    "typescript": "5.5.4",
+    "vitest": "2.0.5"
+  },
+  "peerDependencies": {
+    "joi": ">= 17.4.0 <= 17.13.3"
+  }
+}

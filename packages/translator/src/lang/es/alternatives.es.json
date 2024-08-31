@@ -1,0 +1,7 @@
+{
+  "alternatives.all": "{{#label}} no coincide con todos los tipos requeridos",
+  "alternatives.any": "{{#label}} no coincide con ninguno de los tipos permitidos",
+  "alternatives.match": "{{#label}} no coincide con ninguno de los tipos permitidos",
+  "alternatives.one": "{{#label}} coincide con más de un tipo permitido",
+  "alternatives.types": "{{#label}} debe ser uno de {{#types}}"
+}

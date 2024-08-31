@@ -1,0 +1,65 @@
+{
+  "title": "¡Bienvenido a la demo de Joi Translator!",
+  "prompt": {
+    "message": "Elija una opción",
+    "choices": [
+      { "name": "Iniciar sesión", "value": "LOGIN" },
+      { "name": "Registrarse", "value": "SIGN_IN" },
+      { "name": "Cambiar idioma", "value": "CHANGE_LANGUAGE" },
+      { "name": "Salir", "value": "QUIT" }
+    ],
+    "choicesLogged": [
+      { "name": "Editar perfil", "value": "EDIT_PROFILE" },
+      { "name": "Cerrar sesión", "value": "LOGOUT" },
+      { "name": "Cambiar idioma", "value": "CHANGE_LANGUAGE" },
+      { "name": "Salir", "value": "QUIT" }
+    ]
+  },
+  "commands": {
+    "changeLanguage": {
+      "title": "Cambiar idioma",
+      "prompt": {
+        "message": "Elija un idioma",
+        "back": "Volver"
+      }
+    },
+    "login": {
+      "title": "Iniciar sesión",
+      "prompt": {
+        "username": {
+          "message": "Nombre de usuario:"
+        },
+        "password": {
+          "message": "Contraseña:"
+        }
+      }
+    },
+    "signIn": {
+      "title": "Registrarse",
+      "prompt": {
+        "fullname": {
+          "message": "Nombre completo:"
+        },
+        "username": {
+          "message": "Nombre de usuario:"
+        },
+        "phone": {
+          "message": "Teléfono:"
+        },
+        "birthday": {
+          "message": "Nacimiento:"
+        },
+        "password": {
+          "message": "Contraseña:"
+        },
+        "repeatPassword": {
+          "message": "Repetir contraseña:"
+        },
+        "passwordNotMatch": "Las contraseñas no coinciden"
+      }
+    },
+    "tryAgain": "Intente de nuevo...\n",
+    "userExists": "El usuario ya existe",
+    "invalidCredentials": "Credenciales inválidas"
+  }
+}

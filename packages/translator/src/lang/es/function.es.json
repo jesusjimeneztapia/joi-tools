@@ -1,0 +1,6 @@
+{
+  "function.arity": "{{#label}} debe tener {{#n}} argumentos",
+  "function.class": "{{#label}} debe ser una clase",
+  "function.maxArity": "{{#label}} debe tener como máximo {{#n}} argumentos",
+  "function.minArity": "{{#label}} debe tener al menos {{#n}} argumentos"
+}

@@ -1,0 +1,10 @@
+{
+  "any.custom": "{{#label}} falló en la validación personalizada porque {{#error.message}}",
+  "any.default": "{{#label}} arrojó un error al ejecutar el método predeterminado",
+  "any.failover": "{{#label}} arrojó un error al ejecutar el método de conmutación por error",
+  "any.invalid": "{{#label}} contiene un valor no válido",
+  "any.only": "{{#label}} debe ser {if(#valids.length == 1, \"\", \"uno de \")}{{#valids}}",
+  "any.ref": "{{#label}} {{#arg}} referencias {{:#ref}} que {{#reason}}",
+  "any.required": "{{#label}} es obligatorio",
+  "any.unknown": "{{#label}} no está permitido"
+}

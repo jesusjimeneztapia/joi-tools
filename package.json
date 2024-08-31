@@ -1,0 +1,27 @@
+{
+  "name": "joi-tools",
+  "version": "0.0.1",
+  "private": "true",
+  "workspaces": [
+    "demos/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "co": "sui-mono commit"
+  },
+  "keywords": [
+    "joi",
+    "tools"
+  ],
+  "author": "jesusjimeneztapia456@gmail.com",
+  "license": "MIT",
+  "description": "Monorepo of joi tools",
+  "devDependencies": {
+    "@s-ui/mono": "2.45.0",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-config-standard": "17.1.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "prettier": "3.3.3"
+  }
+}
