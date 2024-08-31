@@ -3,5 +3,6 @@ test
 .eslintrc.json
 .gitignore
 .prettierrc
+CHANGELOG.md
 tsconfig.json
 vitest.config.ts
