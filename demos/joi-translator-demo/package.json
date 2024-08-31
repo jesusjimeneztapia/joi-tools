@@ -14,7 +14,7 @@
   "license": "MIT",
   "description": "",
   "dependencies": {
-    "@joi-tools/translator": "^0.1.0",
+    "@joi-tools/translator": "^0.0.1",
     "inquirer": "10.1.8",
     "joi": "17.13.3"
   }
