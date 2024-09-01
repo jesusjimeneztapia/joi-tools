@@ -1,3 +1,11 @@
+<center>
+
+![NPM License](https://img.shields.io/npm/l/%40joi-tools%2Ftranslator)
+![npm](https://img.shields.io/npm/v/@joi-tools%2Ftranslator)
+<a href="https://github.com/jesusjimeneztapia" rel="nofollow"><img src="https://img.shields.io/badge/created%20by-jesusjimeneztapia-6d28d9?logo=github" alt="Created by Colin McDonnell"></a>
+
+</center>
+
 # Translation for Joi
 
 Translated messages from [Joi](https://joi.dev/) validation errors. Base on the Portuguese translated package [joi-translation-pt-br](https://www.npmjs.com/package/joi-translation-pt-br).
@@ -61,3 +69,7 @@ const { error } = loginSchema.validate(data, { messages: messages.es })
 ```
 
 > If the specified language is not supported by the package, messages will be in English by default.
+
+## Changelog
+
+View the changelog at [CHANGELOG.md](https://github.com/jesusjimeneztapia/joi-tools/blob/master/packages/translator/CHANGELOG.md)
