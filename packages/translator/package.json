@@ -4,9 +4,9 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "github.com/jesusjimeneztapia/joi-tools"
+    "url": "https://github.com/jesusjimeneztapia/joi-tools.git"
   },
-  "homepage": "github.com/jesusjimeneztapia/joi-tools/tree/main/packages/translator",
+  "homepage": "https://github.com/jesusjimeneztapia/joi-tools/tree/master/packages/translator#readme",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
