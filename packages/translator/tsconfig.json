@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES2016",
     "module": "CommonJS",
-    "outDir": "lib",
+    "outDir": "dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -16,10 +16,9 @@
     "baseUrl": "src",
     "paths": {
       "@messages/*": ["messages/*"],
-      "@translations/*": ["translations/*"],
       "@lang/*": ["lang/*"]
     }
   },
   "include": ["src"],
-  "exclude": ["node_modules", "lib", "test"]
+  "exclude": ["node_modules", "dist", "lib", "test"]
 }

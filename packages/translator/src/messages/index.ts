@@ -1,4 +1,4 @@
-import type { Language } from '../types'
+import type { Language } from '../../types'
 import enMessages from './en.messages'
 import esMessages from './es.messages'
 

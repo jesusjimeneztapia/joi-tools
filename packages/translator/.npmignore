@@ -1,8 +1,10 @@
+dist
 src
 test
 .eslintrc.json
 .gitignore
 .prettierrc
+.swcrc
 CHANGELOG.md
 tsconfig.json
 vitest.config.ts

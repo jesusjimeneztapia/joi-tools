@@ -1,10 +1,11 @@
 import { messages } from '@messages/index'
+
 import type {
   CustomValidationOptions,
   ErrorFormattingOptions,
   Language,
   ValidationOptions,
-} from './types'
+} from '../types'
 
 export function createValidationOptions(
   language: Language = 'en',

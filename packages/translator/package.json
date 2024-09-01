@@ -1,14 +1,14 @@
 {
   "name": "@joi-tools/translator",
   "description": "Translated messages from Joi validation errors",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/jesusjimeneztapia/joi-tools.git"
   },
   "homepage": "https://github.com/jesusjimeneztapia/joi-tools/tree/master/packages/translator#readme",
   "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "types": "types.d.ts",
   "files": [
     "lib"
   ],
@@ -23,16 +23,23 @@
     "url": "https://github.com/jesusjimeneztapia"
   },
   "scripts": {
-    "build": "(IF EXIST .\\lib rd /s /q .\\lib) && tsc && tsc-alias && copy .\\src\\types.d.ts .\\lib",
-    "prepare": "npm run test -- run && npm run build",
+    "build": "npm run lint && (IF EXIST .\\dist rd /s /q .\\dist) && tsc && tsc-alias",
+    "prepare": "npm run test -- run && npm run build && (IF EXIST .\\lib rd /s /q .\\lib) && npm run minify",
     "lint": "eslint src --ext .ts",
     "lint:fix": "npm run lint -- --fix",
-    "test": "vitest"
+    "test": "vitest",
+    "minify": "npm run minify:swc && npm run minify:lang",
+    "minify:swc": "swc dist/messages dist/index.js --ignore **/*.ts -d lib --strip-leading-paths",
+    "minify:lang": "npm run copy:lang && minimize-json .\\lib\\lang",
+    "copy:lang": "xcopy .\\dist\\lang .\\lib\\lang /e /h /c /i"
   },
   "license": "MIT",
   "devDependencies": {
+    "@swc/cli": "0.4.0",
+    "@swc/core": "1.7.22",
     "@typescript-eslint/eslint-plugin": "8.3.0",
     "@typescript-eslint/parser": "8.3.0",
+    "minimize-json": "1.0.1",
     "tsc-alias": "1.8.10",
     "typescript": "5.5.4",
     "vitest": "2.0.5"
