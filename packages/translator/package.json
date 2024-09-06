@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jesusjimeneztapia/joi-tools.git"
+    "url": "git+https://github.com/jesusjimeneztapia/joi-tools.git"
   },
   "homepage": "https://github.com/jesusjimeneztapia/joi-tools/tree/master/packages/translator#readme",
   "main": "lib/index.js",
@@ -24,15 +24,14 @@
     "url": "https://github.com/jesusjimeneztapia"
   },
   "scripts": {
-    "build": "npm run lint && (IF EXIST .\\dist rd /s /q .\\dist) && tsc && tsc-alias",
-    "prepare": "npm run test -- run && npm run build && (IF EXIST .\\lib rd /s /q .\\lib) && npm run minify",
+    "build": "npm run lint && tsc -b --clean && tsc && tsc-alias",
+    "prepare": "npm run test -- run && npm run build && npm run minify",
     "lint": "eslint src --ext .ts",
     "lint:fix": "npm run lint -- --fix",
     "test": "vitest",
     "minify": "npm run minify:swc && npm run minify:lang",
-    "minify:swc": "swc dist/messages dist/index.js --ignore **/*.ts -d lib --strip-leading-paths",
-    "minify:lang": "npm run copy:lang && minimize-json .\\lib\\lang",
-    "copy:lang": "xcopy .\\dist\\lang .\\lib\\lang /e /h /c /i"
+    "minify:swc": "swc dist -D --ignore **/*.ts -d lib --delete-dir-on-start --strip-leading-paths",
+    "minify:lang": "minimize-json .\\lib\\lang"
   },
   "license": "MIT",
   "devDependencies": {
